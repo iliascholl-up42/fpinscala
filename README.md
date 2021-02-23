@@ -33,59 +33,32 @@ working through the book.
 
 Chapter descriptions:
 
-* Chapter 2: gettingstarted
-* Chapter 3: datastructures
-* Chapter 4: errorhandling
-* Chapter 5: laziness
-* Chapter 6: state
-* Chapter 7: parallelism
-* Chapter 8: testing
-* Chapter 9: parsing
-* Chapter 10: monoids
-* Chapter 11: monads
-* Chapter 12: applicative
-* Chapter 13: iomonad
-* Chapter 14: localeffects
-* Chapter 15: streamingio
+* Chapter 2: **gettingstarted**
+* Chapter 3: ~~datastructures~~
+* Chapter 4: ~~errorhandling~~
+* Chapter 5: ~~laziness~~
+* Chapter 6: ~~state~~
+* Chapter 7: ~~parallelism~~
+* Chapter 8: ~~testing~~
+* Chapter 9: ~~parsing~~
+* Chapter 10: ~~monoids~~
+* Chapter 11: ~~monads~~
+* Chapter 12: ~~applicative~~
+* Chapter 13: ~~iomonad~~
+* Chapter 14: ~~localeffects~~
+* Chapter 15: ~~streamingio~~
 
-To build the code for the first time, if on windows:
+# Setup
 
-    $ .\sbt.cmd
+This repository can be built using IDEA Ultimate with Scala plugin 
+configured to use the *Update Channel: Nightly Builds*. The snippets
+can then be run from the IDE.
 
-If on mac/linux, first make sure you have not checked out the code onto
-an encrypted file system, otherwise you will get compile errors
-regarding too long file names (one solution is to put the fpinscala repo
-on a unencrypted usb key, and symlink it into your preferred code
-location).
+# Scala 3 Compatibility
 
-    $ chmod a+x ./sbt
-    $ ./sbt
-
-This will download and launch [sbt](http://scala-sbt.org), a build tool
-for Scala. Once it is finished downloading, you'll get a prompt from
-which you can issue commands to build and interact with your code. Try
-the following:
-
-    > project exercises
-    > compile
-
-This switches to the exercises project, where your code lives, and
-compiles the code. You can also do:
-
-    > console
-
-to get a Scala REPL with access to your exercises, and
-
-    > run
-
-To get a menu of possible main methods to execute.
-
-To create project files for the eclipse IDE you can install the
-[sbteclipse](https://github.com/typesafehub/sbteclipse)
-[sbt](http://scala-sbt.org) plugin. This makes a new command available
-in [sbt](http://scala-sbt.org):
-
-    > eclipse
+All `*.scala` files have been moved to `*.scala2` as some of them don't
+compile using Scala 3. We will adjust the broken files as we go. See
+chapter description above to see the current state of Scala 3 support.
 
 All code in this repository is
 [MIT-licensed](http://opensource.org/licenses/mit-license.php). See the
